@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.pltw.example.synthesizer.SynthesizerActivity">
+
+    <Button
+        android:id="@+id/cButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bbButton"
+        android:layout_alignBottom="@+id/bbButton"
+        android:layout_toEndOf="@+id/dsButton"
+        android:onClick="onButtonCClick"
+        android:text="C" />
+
+    <Button
+        android:id="@+id/fsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonFSClick"
+        android:text="FS"
+        android:layout_below="@+id/dButton"
+        android:layout_toStartOf="@+id/gButton" />
+
+    <Button
+        android:id="@+id/hgButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonhGClick"
+        android:text="HG"
+        android:layout_alignBottom="@+id/hfButton"
+        android:layout_toEndOf="@+id/bbButton" />
+
+    <Button
+        android:id="@+id/hfsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonhFSClick"
+        android:text="HFS"
+        android:layout_below="@+id/fsButton"
+        android:layout_toEndOf="@+id/fsButton" />
+
+    <Button
+        android:id="@+id/hfButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonhFClick"
+        android:text="HF"
+        android:layout_alignBaseline="@+id/hfsButton"
+        android:layout_alignBottom="@+id/hfsButton"
+        android:layout_alignStart="@+id/dButton" />
+
+    <Button
+        android:id="@+id/heButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonhEClick"
+        android:text="HE"
+        android:layout_alignBaseline="@+id/hfButton"
+        android:layout_alignBottom="@+id/hfButton"
+        android:layout_toStartOf="@+id/hfButton" />
+
+    <Button
+        android:id="@+id/gsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonGSClick"
+        android:text="GS"
+        android:layout_above="@+id/hgButton"
+        android:layout_alignStart="@+id/hgButton" />
+
+    <Button
+        android:id="@+id/fButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonFClick"
+        android:text="F"
+        android:layout_alignBaseline="@+id/fsButton"
+        android:layout_alignBottom="@+id/fsButton"
+        android:layout_toStartOf="@+id/fsButton" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Tap a Button to Play a Sound" />
+
+    <Button
+        android:id="@+id/eButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonEClick"
+        android:text="@string/eButton"
+        android:layout_below="@+id/cButton"
+        android:layout_toEndOf="@+id/dsButton" />
+
+    <Button
+        android:id="@+id/gButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fsButton"
+        android:layout_alignBottom="@+id/fsButton"
+        android:layout_toEndOf="@+id/bButton"
+        android:onClick="onButtonGClick"
+        android:text="G" />
+
+    <Button
+        android:id="@+id/dsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonDSClick"
+        android:text="DS"
+        android:layout_alignBaseline="@+id/eButton"
+        android:layout_alignBottom="@+id/eButton"
+        android:layout_alignStart="@+id/bbButton" />
+
+    <Button
+        android:id="@+id/dButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonDClick"
+        android:text="D"
+        android:layout_alignBaseline="@+id/csButton"
+        android:layout_alignBottom="@+id/csButton"
+        android:layout_toEndOf="@+id/fButton" />
+
+    <Button
+        android:id="@+id/csButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fButton"
+        android:layout_below="@+id/bButton"
+        android:onClick="onButtonCSClick"
+        android:text="CS" />
+
+    <Button
+        android:id="@+id/bbButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonBBClick"
+        android:text="BB"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <Button
+        android:id="@+id/bButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/aButton"
+        android:layout_alignBottom="@+id/aButton"
+        android:layout_alignStart="@+id/textView"
+        android:onClick="onButtonBClick"
+        android:text="B" />
+
+    <Button
+        android:id="@+id/aButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_toStartOf="@+id/bButton"
+        android:onClick="onButtonAClick"
+        android:text="A" />
+
+    <Button
+        android:id="@+id/challenge1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/heButton"
+        android:layout_centerVertical="true"
+        android:onClick="firstChallenge"
+        android:text="Challenge 1" />
+
+    <Button
+        android:id="@+id/challenge5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="secondChallenge"
+        android:text="Challenge 5"
+        android:layout_alignBaseline="@+id/button19"
+        android:layout_alignBottom="@+id/button19"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/challenge1"
+        android:layout_alignBottom="@+id/challenge1"
+        android:layout_alignEnd="@+id/hgButton"
+        android:onClick="thirdChallenge"
+        android:text="Challenge 9" />
+
+</RelativeLayout>
